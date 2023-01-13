@@ -1,1 +1,6 @@
 p= link_to 'Ask question', new_question_path
+p
+h2 Questions:
+
+- @questions.each do |question|
+  p #{question.title} | #{question.body} | #{link_to 'Open', question_path(question)}
